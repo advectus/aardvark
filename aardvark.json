@@ -1,0 +1,13 @@
+{
+  "Aardvark": {
+    "assets": [
+      "js/custom.js",
+      "css/custom.css"
+    ],
+    "envs": [
+      "https://dev.company.com",
+      "https://staging.company.com",
+      "https://www.company.com"
+    ]
+  }
+}
