@@ -29,7 +29,7 @@ A CLI script used to help track static assets that have been deployed to multipl
   "css/custom.css"
 ]
 ```
-Specify each asset that you are looking to examine
+Specify the assets that you are looking to examine
 
 ### specify environments to fetch each asset from
 ```
@@ -39,12 +39,12 @@ Specify each asset that you are looking to examine
   "https://www.company.com"
 ]
 ```
-Specify the environment that you wish to fetch the assets from
+Specify the environments that you wish to fetch the assets from
 
 
 ## Usage
 ```
-wget -O aardvark https://github.com/advectus/aardvark-cli/blob/master/bin/aardvark-osx
+wget -O aardvark https://raw.githubusercontent.com/advectus/aardvark-cli/master/bin/aardvark-osx && chmod +x aardvark
 ./aardvark crawl aardvark.json
 ./aardvark analyze /data/results
 ```

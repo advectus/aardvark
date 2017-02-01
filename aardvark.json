@@ -1,13 +1,15 @@
 {
   "Aardvark": {
     "assets": [
-      "js/custom.js",
-      "css/custom.css"
+      "ui/upperfunnel/1.0.21/styles/vendor.css",
+      "ui/upperfunnel/1.0.21/styles/main.css",
+      "globalnav/tesla/2.0/themes/tesla.theme.min.css",
+      "globalnav/tesla/2.0/themes/tesla.theme.IRU.css",
+      "globalnav/tesla/2.0/themes/tesla.theme.alerts.css",
+      "scripts/foresee_global/foresee-dhtml.css"
     ],
     "envs": [
-      "https://dev.company.com",
-      "https://staging.company.com",
-      "https://www.company.com"
+      "https://www.att.com/"
     ]
   }
 }
