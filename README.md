@@ -48,3 +48,46 @@ wget -O aardvark https://raw.githubusercontent.com/advectus/aardvark-cli/master/
 ./aardvark crawl aardvark.json
 ./aardvark analyze /data/results
 ```
+
+## Development
+
+### Install golang
+
+https://golang.org/doc/install
+
+```
+$ go version
+go version go1.15.5 darwin/amd64
+```
+
+### manually install dependencies
+```
+$ go get github.com/edhere/aardvark-cli/aardvark
+$ go get github.com/urfave/cli
+```
+
+### Build 
+
+```
+$ go build -o aardvark-osx cmd/aardvark/main.go
+$ mv aardvark-osx bin/aardvark-osx
+```
+
+### Setup aardvark.json
+
+At project root, create an aardvark.json using the following schema:
+
+```
+{
+  "Aardvark": {
+    "assets": [],
+    "envs": []
+  }
+}
+```
+
+### test interactive with program
+
+```
+$ ./bin/aardvark-osx crawl ../aardvark.json
+```

@@ -5,7 +5,7 @@ import (
   "os"
   "runtime"
   "github.com/urfave/cli"
-  "github.com/advectus/aardvark-cli/aardvark"
+  "github.com/edhere/aardvark-cli/aardvark"
 )
 
 func main() {
@@ -22,7 +22,7 @@ func main() {
   app := cli.NewApp()
   app.Name = "Aardvark"
   app.Version = "0.0.1"
-  app.Commands = []cli.Command{
+  app.Commands = []*cli.Command{
     {
       Name: "crawl",
       Aliases: []string{"c"},
@@ -51,7 +51,7 @@ func main() {
       Name: "env",
       Aliases: []string{"e"},
       Usage: "options for envs",
-      Subcommands: []cli.Command{
+      Subcommands: []*cli.Command{
         {
           Name: "add",
           Usage: "add a new environment",
@@ -74,7 +74,7 @@ func main() {
       Name: "asset",
       Aliases: []string{"a"},
       Usage: "options for assets",
-      Subcommands: []cli.Command{
+      Subcommands: []*cli.Command{
         {
           Name: "add",
           Usage: "add a new asset",
