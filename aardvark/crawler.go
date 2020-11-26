@@ -36,8 +36,9 @@ func exec(envs []string, path string) {
   }
 
   for _,env := range envs {
-    //fmt.Println(env)
-    href := env + path
+    fmt.Println(env)
+    href := env + "/" + path
+    fmt.Println(href)
     response, err := http.Get(href)
     check(err)
 
